@@ -1,5 +1,5 @@
 body {
-    background-color: #f7fff7; /* light green */
+    background-color: #F1E4E8; /* light green */
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -7,16 +7,24 @@ body {
     text-align: center;
   }
   
+/*
+#F1E4E8 basically white pink
+#E2DCDE grey
+#CEB1BE pink
+#B97375 darker pink
+#2D2D34 basically black pink
+*/
+
   header {
-    background-color: #2c3e50; /* dark blue */
-    color: #fff; /* white */
+    background-color: #2D2D34; /* dark blue */
+    color: #F1E4E8; /* white */
     padding: 20px;
   }
 
   .wrapper {
     width: 850px;
     word-wrap: break-word;
-    overflow-wrap: break-word;
+    overflow-wrap: break-word; 
   }
   
   .centered {
@@ -83,8 +91,8 @@ body {
   }
   
   footer {
-    background-color: #2c3e50; /* dark blue */
-    color: #fff; /* white */
+    background-color: #2D2D34; /* dark blue */
+    color: #E2DCDE; /* white */
     padding: 10px 20px;
     text-align: center;
   }
