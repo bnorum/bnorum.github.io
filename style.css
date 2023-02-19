@@ -1,10 +1,14 @@
 body {
-    background-color: #F1E4E8; /* light green */
+    background-color: #F1E4E8; 
     font-family:  Consolas, monospace;
     font-size: 16px;
     line-height: 1.5;
     margin: 0;
     text-align: center;
+  
+  }
+  * {
+    margin: 0 auto;
   }
   
 /*
@@ -16,8 +20,8 @@ body {
 */
 
   header {
-    background-color: #2D2D34; /* dark blue */
-    color: #F1E4E8; /* white */
+    background-color: #2D2D34; 
+    color: #F1E4E8; 
     padding: 20px;
   }
 
@@ -54,7 +58,7 @@ body {
   }
   
   nav a {
-    color: #fff; /* white */
+    color: #fff;
     text-decoration: none;
   }
   
@@ -91,8 +95,8 @@ body {
   }
   
   footer {
-    background-color: #2D2D34; /* dark blue */
-    color: #E2DCDE; /* white */
+    background-color: #2D2D34; 
+    color: #E2DCDE; 
     padding: 10px 20px;
     text-align: center;
   }
