@@ -10,6 +10,7 @@ function expandImage(img) {
     document.body.appendChild(overlay);
   }
 
+
 function fadeInBody() {
   var opacity = 0;
   var timer = setInterval(function() {
