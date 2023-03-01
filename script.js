@@ -23,22 +23,3 @@ function fadeInBody() {
   
 window.onload = fadeInBody;
 
-//Steely Dan LastFM implementation
-
-const apiKey = '8ea5a5da7317567eb1927bfa0b324ed5';
-const username = 'bradycn';
-const period = '1month';
-
-const listenCountElem = document.getElementById('listen-count');
-
-setInterval(() => {
-  const url = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&api_key=${apiKey}&format=json&limit=200&period=${period}`;
-
-  fetch(url)
-    .then(response => response.json())
-    .then(data => {
-      const trackCount = data.recenttracks['@attr'].total;
-      listenCountElem.textContent = trackCount;
-    })
-    .catch(error => console.error(error));
-}, 60000);
