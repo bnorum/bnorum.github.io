@@ -44,7 +44,7 @@ header {
   grid-gap: 20px; 
 }
 #profile-image {
-  width: 100%;
+  width: 250px;
   height: auto;
 }
 .wrapper {
