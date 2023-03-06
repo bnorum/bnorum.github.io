@@ -8,7 +8,7 @@ function expandImage(img) {
     fullImg.src = img.src;
     overlay.appendChild(fullImg);
     
-    var altText = document.createElement("p");
+    var altText = document.createElement("a");
     altText.textContent = img.alt;
     overlay.appendChild(altText);
     fullImg.style.display = "block";
