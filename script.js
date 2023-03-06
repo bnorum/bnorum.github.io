@@ -8,6 +8,12 @@ function expandImage(img) {
     fullImg.src = img.src;
     overlay.appendChild(fullImg);
     document.body.appendChild(overlay);
+    
+    var altText = document.createElement("p");
+    altText.textContent = img.alt;
+    overlay.appendChild(altText);
+
+    document.body.appendChild(overlay);
   }
 
 function fadeInBody() {
