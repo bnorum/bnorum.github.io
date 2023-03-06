@@ -8,12 +8,9 @@ function expandImage(img) {
     fullImg.src = img.src;
     overlay.appendChild(fullImg);
     
-    var altText = document.createElement("a");
+    var altText = document.createElement("p");
     altText.textContent = img.alt;
     overlay.appendChild(altText);
-    fullImg.style.display = "block";
-    fullImg.style.margin = "auto";
-    altText.style.textAlign = "center";
     altText.style.color = #B97375;
 
     document.body.appendChild(overlay);
