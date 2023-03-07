@@ -15,7 +15,7 @@ function expandImage(img) {
     fullImg.style.margin = "auto";
     altText.style.textAlign = "center";
     altText.style.color = "#B97375";
-    altText.style.fontSizeAdjust = "2.0";
+    altText.style.fontSize = "large";
 
 
     document.body.appendChild(overlay);
