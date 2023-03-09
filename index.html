@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Brady Norum</title>
+    <title>Home</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
@@ -12,50 +12,44 @@
       <h1>Brady Norum</h1>
       <nav>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#gallery">Digital Art</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html">About</a></li>
+          <li><a href="art.html">Digital Art</a></li>
+          <li><a href="links.html">Contact + Links</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section id="about">
         <h2>About</h2>
-        <div class="wrapper">
-          <p>My name is Brady Norum and I pretend to be a computer scientist.
-             I'm currently attending Hofstra University for a BA in Computer Science, 
-             concentrated in Web and Mobile Engineering. I graduate in 2025, and 
-             hopefully I can stop pretending before then (no promises!). I'm passionate about making the web 
-             navigable for creators and those looking to advertise in a digital space.
-             I also have interests in the fields of social media and digital art. On my days off, 
-             I play accordion, read books (I'm a big David Foster Wallace fan), and get about to a little tomfoolery.
-        </p>
+        <div class="grid-container">
+	<div>
+          <p>
+            	My name is Brady Norum and I am a computer science student at Hofstra University, 
+            	with a concentration in web and mobile engineering and a minor in math. 
+            	I graduate in Spring of 2025, and am currently looking for an internship for
+            	before or after I graduate. I'm passionate about making the web navigable for 
+            	creators and those looking to advertise in a digital space. I also have interests
+            	in the fields of design and digital art.
+	  <br><br>
+		Outside of computer science, I constantly find myself online. At Hofstra, I 
+		manage social media for our campus television show <a href="https://www.instagram.com/directorscuthu/"  target="_blank">Director's Cut</a>.
+		This is one of my major creative outlets as a digital artist.
+		As an amatuer musician, I learn from the internet, and just use it to enjoy 
+		music. My favorite artist is Steely Dan. I'm probably the biggest Steely Dan fan.
+		I'm also a writer, and plan to publish prose online soon.
+	   <br><br>
+		Enjoy checking out my page!
+          </p>
+	        
       </div>
+      <div class="image-container">
+	      <img id="profile-image" src="images/prof.jpg" alt="Profile Image" height="320">
+      </div>
+      </div class="grid-container">
       </section>
-      <section id="gallery">
-        <h2>Digital Art</h2>
-        
-        <p>click for fullscreen.</p>
-        <div class="image-container">
-          <img src="images/artwork4.png" alt="Image 1" height="320" onclick="expandImage(this)">
-          <img src="images/artwork2.jpg" alt="Image 2" height="320" onclick="expandImage(this)">
-          <img src="images/artwork3.png" alt="Image 3" height="320" onclick="expandImage(this)">
-          <img src="images/image3point5.png" alt="Image 4" height="320" onclick="expandImage(this)">
-        
-        </div>
-        <div class="image-container">
-          <img src="images/artwork5.png" alt="Image 2" height="320" onclick="expandImage(this)">
-          <img src="images/artwork6.png" alt="Image 3" height="320" onclick="expandImage(this)">
-        </div>
-      </section>
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>EMAIL: bradennorum@gmail.com or bnorum1@pride.hofstra.edu
-
-        </p>
-      </section>
+     
     </main>
-    <footer>
+    <footer class="footer">
       <p>Copyright 2023 © Braden Norum</p>
     </footer>
   </body>
