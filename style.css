@@ -148,12 +148,16 @@ footer {
   }
   
   .modal-content{
-  margin: auto;
-  display: block;
-      position: absolute;
+    margin: auto;
+    display: block;
+    width:auto;
+    height:90%;
+    
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
   }
   
   .modal-hover-opacity {
