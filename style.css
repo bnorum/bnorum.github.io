@@ -156,24 +156,19 @@ footer {
     transform: translate(-50%, -50%);
   }
   
-  
   .modal-hover-opacity {
   opacity:1;
   filter:alpha(opacity=100);
-  
   }
-  
   .modal-hover-opacity:hover {
   opacity:0.60;
   filter:alpha(opacity=60);
-  
   }
-  
-  
   .close {
   text-decoration:none;float:right;font-size:24px;font-weight:bold;color:white
   }
   .container1 {
-  width:400px;
+  width:305px;
+  height:250px;
   display:inline-block;
   }
