@@ -110,7 +110,7 @@ footer {
   grid-area: footer;
 }
 
-/* mouse over effects*/
+/* mouse over effects for header and funny stuff*/
 .hvr-bounce-out {
   display: inline-block;
   vertical-align: middle;
@@ -126,8 +126,23 @@ footer {
   -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
+.hvr-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-rotate:active {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
 
-/*image modals*/
+/*gallery image containers*/
 .container1 {
   background-color: #2D2D34; 
   border-radius: 25px;
@@ -160,6 +175,7 @@ footer {
   font-weight: 600;
 }
 
+/*image modals*/
 
 .modal {
   z-index:1;
