@@ -48,7 +48,7 @@ nav ul {
 
 nav li {
   display: flex;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 nav li img {
@@ -193,9 +193,15 @@ footer {
   height: 58.4vh; 
   object-fit: cover;
   float: left;
+  cursor:pointer;
+  opacity:1;
   transition: width .25s;
 }
 
+.container2 img:hover {
+  opacity:0.80;
+  
+}
 .container2 p {
   padding: 20px 20px 0px 25vw;
   text-align: left;
