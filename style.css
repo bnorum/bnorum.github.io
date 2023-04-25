@@ -55,7 +55,8 @@ nav li img {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  height: 5vh;
+  max-width: 12vw;
+  height:auto;
 }
 
 .hvr-bounce-out {
