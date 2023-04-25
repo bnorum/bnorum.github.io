@@ -145,7 +145,7 @@ footer {
 .container1 {
   background-color: #2D2D34; 
   border-radius: 25px;
-  width:310px;
+  width:22vw;
   height:315px;
   display:inline-block;
   margin:0px 5px 15px 0px;
@@ -155,7 +155,7 @@ footer {
 .container1 img {
   border-radius: 20px;
   margin: 5px 0px 0px 5px;
-  width: 300px; 
+  width: 21.25vw; 
   height: 250px; 
   object-fit: cover;
   cursor:pointer;
@@ -167,12 +167,45 @@ footer {
   
 }
 
+
 .container1 p {
   text-align: center;
   color: #F1E4E8; 
   font-weight: 600;
 }
 /*gallery image containers*/
+
+/*project containers*/
+.container2 {
+  background-color: #2D2D34; 
+  border-radius: 25px;
+  width:45vw;
+  height:315px;
+  display:inline-block;
+  margin:0px 5px 0px 0px;
+  overflow: hidden;
+}
+
+.container2 img {
+  border-radius: 20px;
+  margin: 5px 0px 0px 5px;
+  width: 44.25vw; 
+  height: 305px; 
+  object-fit: cover;
+  float: left;
+  transition: width .25s;
+}
+
+.container2 p {
+  padding: 20px 20px 0px 25vw;
+  text-align: left;
+  color: #F1E4E8; 
+}
+
+.bold {
+  font-weight: 600;
+}
+/*project containers*/
 
 /*image modals*/
 .modal {

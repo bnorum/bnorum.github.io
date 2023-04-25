@@ -14,5 +14,13 @@ function fadeInBody() {
     }, 50);
   }
   
+function projToggle(element) {
+  var x = element;
+  if (x.style.width === "22.5vw") {
+    x.style.width = "44.25vw";
+  } else {
+    x.style.width = "22.5vw";
+  }
+}
 window.onload = fadeInBody;
 
