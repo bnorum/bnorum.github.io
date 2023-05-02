@@ -156,7 +156,7 @@ footer {
 
 .container1 img {
   border-radius: 20px;
-  margin: 5px 0px 0px 5px;
+  margin: .375vw .375vw 0vw .375vw;
   width: 21.25vw; 
   height: 250px; 
   object-fit: cover;
@@ -165,7 +165,7 @@ footer {
 }
 
 .container1:hover img {
-  height: 305px; 
+  height: 300px; 
   
 }
 
@@ -181,7 +181,7 @@ footer {
 .container2 {
   background-color: #2D2D34; 
   border-radius: 25px;
-  width:45vw;
+  width:44.8vw;
   height:60vh;
   display:inline-block;
   margin:0px 5px 0px 0px;
@@ -190,9 +190,9 @@ footer {
 
 .container2 img {
   border-radius: 20px;
-  margin: 5px 0px 0px 5px;
+  margin: .3vw 0px 0px .3vw;
   width: 44.25vw; 
-  height: 58.4vh; 
+  height: 58.8vh; 
   object-fit: cover;
   float: left;
   cursor:pointer;

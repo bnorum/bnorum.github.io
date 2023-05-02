@@ -1,7 +1,7 @@
 function onModalClick(element) {
   document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
-  }
+}
 
 function fadeInBody() {
   var opacity = 0;
@@ -12,7 +12,7 @@ function fadeInBody() {
       document.body.style.opacity = opacity;
       opacity += 0.5;
     }, 50);
-  }
+}
   
 function projToggle(element) {
   var x = element;
