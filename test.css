@@ -29,22 +29,37 @@ body, html {
     min-height: 400px;
     padding-top: 50px;
     padding-bottom: 150px;
-    padding-left: 20px;
+
     left: 0;
     right: 0;
     background: #F1E4E8;
 }
 
 .below {
-    background:#2D2D34;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 400px;
     padding-top: 200px;
+  
+    padding-bottom: 200px;
     width: 100%;
     z-index: -1;
+    background:#2D2D34;
+}
+.below-2 {
+    background:#F1E4E8;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  
+    width: 100%;
+    z-index: -2;
 }
 .curve {
     position: absolute;
@@ -74,6 +89,37 @@ body, html {
     width: 55%;
     height: 100%;
     background-color: #F1E4E8;
+    transform: translate(-4%, 40%);
+    z-index: 0;
+}
+.curve2 {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+.curve2::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    transform: translate(85%, 60%);
+    background-color: #F1E4E8;
+    z-index: 0;
+}
+
+.curve2::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #2D2D34;
     transform: translate(-4%, 40%);
     z-index: 0;
 }
