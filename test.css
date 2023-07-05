@@ -1,5 +1,13 @@
+/*
+#F1E4E8 basically white pink
+#E2DCDE grey
+#CEB1BE pink
+#B97375 darker pink
+#2D2D34 basically black pink
+*/
+
 body {
-    background-color: #3c31dd;
+    background-color: #F1E4E8;
 }
 
 body, html {
@@ -23,11 +31,11 @@ body, html {
     padding-left: 20px;
     left: 0;
     right: 0;
-    background: #3c31dd;
+    background: #F1E4E8;
 }
 
 .below {
-    background:hsl(216, 21%, 16%);
+    background:#2D2D34;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -53,7 +61,7 @@ body, html {
     width: 55%;
     height: 100%;
     transform: translate(85%, 60%);
-    background-color: hsl(216, 21%, 16%);
+    background-color: #2D2D34;
     z-index: 0;
 }
 
@@ -64,7 +72,7 @@ body, html {
     border-radius: 100% 50%;
     width: 55%;
     height: 100%;
-    background-color: #3c31dd;
+    background-color: #F1E4E8;
     transform: translate(-4%, 40%);
     z-index: 0;
 }
@@ -87,7 +95,7 @@ body, html {
     font-size: 64px;
     letter-spacing: -1px;
     word-spacing: 6px;
-    color: #3c31dd;
+    color: #F1E4E8;
     font-weight: 400;
     text-decoration: none solid rgb(68, 68, 68);
     font-style: normal;
