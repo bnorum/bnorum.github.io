@@ -27,7 +27,8 @@ body, html {
     flex-direction: column;
     align-items: center;
     min-height: 400px;
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 150px;
     padding-left: 20px;
     left: 0;
     right: 0;
