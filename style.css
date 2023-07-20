@@ -182,7 +182,7 @@ footer {
   background-color: #2D2D34; 
   border-radius: 25px;
   width:44.8vw;
-  height:60vh;
+  height:480px;
   display:inline-block;
   margin:0px 5px 0px 0px;
   overflow: hidden;
@@ -192,7 +192,7 @@ footer {
   border-radius: 20px;
   margin: .3vw 0px 0px .3vw;
   width: 44.25vw; 
-  height: 58.8vh; 
+  height: 470px; 
   object-fit: cover;
   float: left;
   cursor:pointer;
