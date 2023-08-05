@@ -1,8 +1,9 @@
 # BRADYNORUM.com
 This is my website
 
-I plan on using it as a more detailed showcase of both my artwork and code.
-I'm in the process of migrating everything from google sites :D
+It showcases some of my art and some of my personal projects.
+I also host an old demo for my game 'We're Wolves' on this site, which is accessed at:
 
+https://bradynorum.com/werewolves/game.html
 
-Open-source. Take the code if you want it I don't think its that impressive.
+It's pretty old and not like the game is now.
