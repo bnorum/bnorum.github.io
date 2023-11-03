@@ -5,11 +5,17 @@
 #B97375 darker pink
 #2D2D34 basically black pink
 */
+@font-face {
+  font-family: cienpointo;
+  src: url(Cienpointo.ttf);
+}
 
 body {
   background-color: #F1E4E8; 
-  font-family:  trebuchet ms, sans-serif;
-  font-size: 16px;
+  font-family:  cienpointo;
+  font-size: 28px;
+  
+  font-weight: 600;
   line-height: 1.5;
   opacity: 0;
   transition: opacity 0.1s ease-in-out;
@@ -25,6 +31,11 @@ body {
   /*grid end (phew)*/
 }
 
+p {
+  font-size: 32px;
+  line-height: 110%;
+  color: #2D2D34; 
+}
 * {
   margin: 0;
 }
@@ -174,6 +185,9 @@ footer {
   text-align: center;
   color: #F1E4E8; 
   font-weight: 600;
+  font-size: 28px;
+  line-height: 80%
+  
 }
 /*gallery image containers*/
 
@@ -208,6 +222,7 @@ footer {
   padding: 20px 20px 0px 25vw;
   text-align: left;
   color: #F1E4E8; 
+  line-height: 90%;
 }
 
 .bold {
