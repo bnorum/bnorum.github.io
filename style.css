@@ -152,6 +152,11 @@ footer {
   text-align: center;
   grid-area: footer;
 }
+
+footer p {
+  color: #B97375;
+
+}
 /*footer*/
 
 /*gallery image containers*/
