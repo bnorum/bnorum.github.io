@@ -13,7 +13,7 @@
 body {
   background-color: #F1E4E8; 
   font-family:  cienpointo;
-  font-size: 28px;
+  font-size: 1.5vw;
   
   font-weight: 600;
   line-height: 1.5;
@@ -32,7 +32,9 @@ body {
 }
 
 p {
-  font-size: 32px;
+  font-size: 1.5vw;
+  
+  font-weight: 600;
   line-height: 110%;
   color: #2D2D34; 
 }
@@ -190,7 +192,7 @@ footer p {
   text-align: center;
   color: #F1E4E8; 
   font-weight: 600;
-  font-size: 28px;
+  font-size: 1.5vw;
   line-height: 80%
   
 }
@@ -281,7 +283,7 @@ footer p {
 .close {
   text-decoration:none;
   float:right;
-  font-size:24px;
+  font-size:1.5vw;
   font-weight:bold;
   color:white;
 }
