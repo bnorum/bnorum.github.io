@@ -46,6 +46,7 @@ $(document).ready(function() {
  
   
 });
+window.onload = function(){swapper();};
 var isOverlayOn = true;
 function swapper() {
   isOverlayOn = !isOverlayOn;
