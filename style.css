@@ -150,7 +150,11 @@
 @font-face {
     font-family: Arcon;
     src: url(images/Arcon-Regular.otf);
-  }
+}
+@font-face {
+    font-family: Archivo;
+    src: url(images/ArchivoBlack-Regular.ttf);
+}
 
 
 
