@@ -1,60 +1,98 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-        <header>
-          <audio id="sound1" src="images/horn.wav" preload="auto"></audio>
-          <h1><img id="headertitle" src="images/headertitle.png" alt="Brady Norum" class="hvr-bounce-out" height="35px" onclick="document.getElementById('sound1').play();"></h1>          
-          <nav>
-            <ul>
-              <li><a href="index.html" class="hvr-bounce-out"><img id="about" src="images/headerabout.png" alt="about" height="40"></a></li>
-              <li><a href="design.html" class="hvr-bounce-out"><img id="design" src="images/headerdesign.png" alt="Profile Image" height="40"></a></li>
-              <li><a href="projects.html" class="hvr-bounce-out"><img id="projects" src="images/headerprojects.png" alt="Profile Image" height="40"></a></li>
-              <li><a href="links.html" class="hvr-bounce-out"><img id="links" src="images/headercontact.png" alt="Profile Image" height="40"></a></li>
-             </ul>
-          </nav>
-        </header>
-    <main>
-      <section id="about">
-        <img id="titleabout" src="images/titleabout.png" alt="ttlabt">
-        <div class="about-text">
-          <img id="profile-image" src="images/profile.png" class="hvr-rotate" alt="Profile Image" width="300px">
-          <p>
-            	My name is Brady Norum and I am a computer science student at Hofstra University, 
-            	with a concentration in web and mobile engineering and a minor in math. 
-            	I graduate in Spring of 2025, and am currently looking for an internship for
-            	before or after I graduate. I'm passionate about making the web navigable for 
-            	creators and those looking to advertise in a digital space. I also have interests
-            	in the fields of design and digital art.
-	        	<br><br>
-	            Outside of computer science, I constantly find myself online. In the past, I have found myself
-              managing social media, and posting my art online. I take commission for graphic design, 
-              and have worked with companies like Thermo Fisher Scientific and The Lawrence Herbert School 
-              of Communication. As an amatuer musician, I learn from the internet, and just use it to enjoy 
-              music. My favorite artist is Steely Dan. I'm probably the biggest Steely Dan fan. Since I was 
-              a kid, I've been really into video games, and recently decided I've had enough of playing them,
-              and decided to start making them.
-            <br><br>
-              I like to consider myself an artist first, and an everything-else second.
-              Recently, I've been incredibly lucky to break ground on projects with a bunch of
-              people, which has allowed me to push my skill as an artist even further. I'm excited
-              to show the world what I can do.
-            <br><br>
-              Enjoy checking out my page!
-          </p>
+    <head>
+        <meta charset="utf-8">
+        <title>NORUM</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="jquery-3.7.1.min.js"></script>
+        <script src="transitions.js"></script>
         
-      </section>
-    </main>
-
-    <footer class="footer">
-      <p>Copyright 2023 © Braden Norum</p>
-    </footer>
+    </head>
+    <div class="overlay" id="overlay"></div>
+    <div class="blackbg"></div>
     
-  </body>
+    <!--
+    //	projects
+    ///////////////////////////////////-->
+    <div class="page__style projects">
+        <div class="page__description">
+            <div id="projects">
+                <img  style="width: 18vw; left: 25px; top: 30px; position: absolute" src="images/watermark.png" />
+                <img class="overlayToggle grain-img" id="toggler" onclick="swapper()"  style="scale: .5; width: 18vw; left: 40vw; bottom: 0.2vh; position: absolute" src="images/stamp.png" />
+                <div style="z-index: 100; width: 62vw; left: 20.8vw; top: 5vh; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 32px; display: inline-flex">
+                    <button class="btn_nav home_link" style="width: 23vw; height: 9.3vh; font-size: 3vw">HOME</button>
+                    <button class="btn_nav about_link" style="width: 23vw; height: 9.3vh; font-size: 3vw">ABOUT</button>
+                    <button class="btn_nav projects_link" style="width: 23vw; height: 9.3vh; font-size: 3vw">PROJECTS</button>
+                    <button class="btn_nav contact_link" style="width: 23vw; height: 9.3vh; font-size: 3vw">CONTACT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    //	contact
+    ///////////////////////////////////-->
+    <div class="page__style contact">
+        <div class="page__description">
+            <div id="contact">
+                <img  style="width: 18vw; left: 25px; top: 30px; position: absolute" src="images/watermark.png" />
+                <img class="overlayToggle grain-img" id="toggler" onclick="swapper()"  style="scale: .5; width: 18vw; left: 40vw; bottom: 0.2vh; position: absolute" src="images/stamp.png" />
+                <div style="z-index: 100; width: 62vw; left: 20.8vw; top: 5vh; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 32px; display: inline-flex">
+                    <button class="btn_nav home_link" style="width: 23vw; height: 9.3vh; font-size: 3vw">HOME</button>
+                    <button class="btn_nav about_link" style="width: 23vw; height: 9.3vh; font-size: 3vw">ABOUT</button>
+                    <button class="btn_nav projects_link" style="width: 23vw; height: 9.3vh; font-size: 3vw">PROJECTS</button>
+                    <button class="btn_nav contact_link" style="width: 23vw; height: 9.3vh; font-size: 3vw">CONTACT</button>
+                </div>
+                <div style="z-index: 100; width: 50vw; left: 22vw; top: 40vh; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 32px; display: inline-flex">
+                    <a class="contacticon" href="mailto:bnorum1@pride.hofstra.edu" target="_blank"><img src="images/email.png" style="height: 20vh;"/></a>
+                    <a class="contacticon" href="https://www.linkedin.com/in/braden-norum/" rel="noopener" target="_blank"><img src="images/linkedin.png" style="height: 20vh;"/></a>
+                    <a class="contacticon" href="https://github.com/bnorum" rel="noopener" target="_blank"><img src="images/github.png" style="height: 20vh;"/></a>
+                    <a class="contacticon" href="Resume10252023.pdf" rel="noopener" target="_blank"><img src="images/resume.png" style="height: 20vh;"/></a>
+                    <a class="contacticon" href="https://www.figma.com/files/user/1212806177182727243?fuid=1212806177182727243" rel="noopener" target="_blank"><img src="images/figma.png" style="height: 20vh;"/></a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    //	about
+    ///////////////////////////////////-->
+    <div class="page__style about">
+        <div class="page__description">
+            <div id="about">
+                <img  style="width: 18vw; left: 25px; top: 30px; position: absolute" src="images/watermark.png" />
+                <img class="overlayToggle grain-img" id="toggler" onclick="swapper()" style="scale: .5; width: 18vw; left: 40vw; bottom: 0.2vh; position: absolute" src="images/stamp.png"/>
+                <div style="z-index: 100; width: 62vw; left: 20.8vw; top: 5vh; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 32px; display: inline-flex">
+                    <button class="btn_nav home_link" style="width: 23vw; height: 9.3vh; font-size: 3vw">HOME</button>
+                    <button class="btn_nav about_link" style="width: 23vw; height: 9.3vh; font-size: 3vw">ABOUT</button>
+                    <button class="btn_nav projects_link" style="width: 23vw; height: 9.3vh; font-size: 3vw">PROJECTS</button>
+                    <button class="btn_nav contact_link" style="width: 23vw; height: 9.3vh; font-size: 3vw">CONTACT</button>
+              </div>
+              <div class="about-text" style="width: 41.5vw; height: 68.7vh; left: 4vw; top: 22vh; position: absolute; color: #fea2c3; font-size: 1.4vw; font-family: Arcon; font-weight: 400; word-wrap: break-word">I am a design oriented front end developer studying at HOFSTRA UNIVERSITY. I take pride in making digital spaces for creatives and for those looking to extend their talents to the internet.<br/><br/>Outside of computer science, I am a passionate designer and artist, and am always interested in learning just about anything. I’ve worked with clients like Thermo Fisher Scientific and the Lawrence Herbert School of Communications to make design dreams come true. Hopefully you’re next (the contact page is right there↗).<br/><br/>And outside of both of those things, there’s nothing I like more than listening to Steely Dan, writing prose, and hitting sweet accordion licks. Thanks for checking out the page!</div>
+              <img style="width: 27.6vw; left: 52.1vw; top: 20vh; position: absolute" src="images/myoldface.png" />
+
+            </div>
+        </div>
+    </div>
+        <!--
+    //	home
+    ///////////////////////////////////-->
+    <div class="page__style home">
+        <div class="page__description">
+            <div id="home">
+                <img class="grain-img" style="width: 35vw; left: 6.5vw; top: 25vh; position: absolute" src="images/NAMELOGO.png" />
+                <img class="grain-img" style="width: 18vw; left: 1.5vw; top: 30px; position: absolute" src="images/watermark.png" />
+                <img class="overlayToggle grain-img" id="toggler" onclick="swapper()" style="scale: .5; width: 18vw; left: 40vw; bottom: 0.2vh; position: absolute" src="images/stamp.png"/>
+                
+                <div style="z-index: 100; left: 50vw; top: 31vh; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <button class="btn_nav about_link"style="width: 23vw; height: 9.3vh;">ABOUT</button>
+                    <button class="btn_nav projects_link" style="width: 23vw; height: 9.3vh;">PROJECTS</button>
+                    <button class="btn_nav contact_link" style="width: 23vw; height: 9.3vh;">CONTACT</button>
+               </div>
+            </div>
+        </div>
+    </div>
+    
+
 </html>
