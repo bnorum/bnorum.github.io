@@ -48,24 +48,24 @@
 
     z-index: 1;
 }
+		
 .btn_nav {
     background: #002a3200;
     border-radius: 30px;
     border: none;
     color: #fea2c3;
     cursor: pointer;
-    font-family: Archivo;
+    width: 23vw; 
     font-size: 4vw;
+    font-family: Archivo;
     font-style: italic;
     font-weight: bolder;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 20px;
-    padding-left: 2.6vw ;
-    width: 146px;
+    padding-left: 2.6vw;
     transition: all .2s ease;			
-}			
-    
+}		    
 .btn_nav:hover { 
     transform: scale(1.3); 
 }
@@ -138,7 +138,7 @@
     transform: scale(0.95);
 }
 .abouttext{
-    z-index:50;
+    z-index:1;
 }
 .contacticon {
     cursor: pointer;
@@ -148,6 +148,41 @@
 .contacticon:hover { 
     transform: scale(1.3); 
 }
+
+.projecttitle {
+    z-index:1;
+    width: 25.84vw; 
+    left: 46.66vw; 
+    top: 30.44vh; 
+    position: absolute; 
+    color: #FEA2C3; 
+    font-size: 2.78vw; 
+    font-family: Archivo; 
+    font-style: italic; 
+    font-weight: 600; 
+    word-wrap: break-word;
+}
+.projectimg {
+    z-index:1;
+    width: 26.23vw; 
+    left: 45.83vw; 
+    top: 37vh; 
+    position: absolute;
+    border-radius:1vw;
+}
+.projectdesc {
+    z-index:1;
+    width: 32.11vw; 
+    left: 13.42vw; 
+    top: 37vh; 
+    position: absolute; 
+    color: #FEA2C3; 
+    font-size: 1.6vw; 
+    font-family: Arcon; 
+    font-weight: bolder; 
+    word-wrap: break-word;
+}
+
 @font-face {
     font-family: Arcon;
     src: url(images/Arcon-Regular.otf);

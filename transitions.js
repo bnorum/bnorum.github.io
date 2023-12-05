@@ -1,3 +1,5 @@
+
+
 $(document).ready(function() {
   $('.btn_nav').on('click', function() {
     // animate content
@@ -23,12 +25,12 @@ $(document).ready(function() {
 
   $('.projects_link').on('click', function() {
     
-    window.open('projects.html', "_self");
-    /*
+    //window.open('projects.html', "_self");
+    
     setTimeout(function() {
       $('.projects').addClass('fadeIn');
     }, 750);
-    */
+    
   });
 
   $('.about_link').on('click', function() {
@@ -42,7 +44,6 @@ $(document).ready(function() {
       $('.contact').addClass('fadeIn');
     }, 750);
   });
-
  
   
 });
