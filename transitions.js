@@ -25,11 +25,11 @@ $(document).ready(function() {
 
   $('.projects_link').on('click', function() {
     
-    //window.open('projects.html', "_self");
+    window.open('projects.html', "_self");
     
-    setTimeout(function() {
-      $('.projects').addClass('fadeIn');
-    }, 750);
+    //setTimeout(function() {
+    //  $('.projects').addClass('fadeIn');
+    //}, 750);
     
   });
 
