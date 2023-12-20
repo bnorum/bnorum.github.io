@@ -2,7 +2,6 @@
 
 $(document).ready(function() {
   $('.btn_nav').on('click', function() {
-    // animate content
     $('.page__style').addClass('animate_content');
     $('.page__description').fadeOut(100).delay(1400).fadeIn();
 
@@ -25,11 +24,11 @@ $(document).ready(function() {
 
   $('.projects_link').on('click', function() {
     
-    window.open('projects.html', "_self");
+    //window.open('projects.html', "_self");
     
-    //setTimeout(function() {
-    //  $('.projects').addClass('fadeIn');
-    //}, 750);
+    setTimeout(function() {
+      $('.projects').addClass('fadeIn');
+    }, 750);
     
   });
 
@@ -44,9 +43,20 @@ $(document).ready(function() {
       $('.contact').addClass('fadeIn');
     }, 750);
   });
- 
-  
+
+  $('.nextproj').on('click', function() {
+    setTimeout(function() {
+      $( "projectholder" ).toArray()
+    }, 750);
+  });  
+
+  $('.single-item').slick({
+    infinite: true,
+    dots: true
+  });
 });
+
+
 window.onload = function(){swapper();};
 var isOverlayOn = true;
 function swapper() {

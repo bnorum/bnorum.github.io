@@ -1,3 +1,14 @@
+
+a {
+    color: #fea2c3;
+}
+a:visited {
+    color: #fea2c3;
+}
+
+
+
+
 *, :before, :after {
 	box-sizing: border-box;
 	padding: 0;
@@ -149,38 +160,49 @@
     transform: scale(1.3); 
 }
 
+.projectholder {
+    display: inline-block;
+}
+
+.projectpair {
+    float: left;
+    
+    margin-left: 12vw;
+
+}
 .projecttitle {
     z-index:1;
-    width: 25.84vw; 
-    left: 46.66vw; 
-    top: 30.44vh; 
-    position: absolute; 
+    width: 25.84vw;
     color: #FEA2C3; 
     font-size: 2.78vw; 
     font-family: Archivo; 
     font-style: italic; 
     font-weight: 600; 
     word-wrap: break-word;
+    text-align: center;
 }
 .projectimg {
-    z-index:1;
+    z-index: 1;
     width: 26.23vw; 
-    left: 45.83vw; 
-    top: 37vh; 
-    position: absolute;
     border-radius:1vw;
 }
 .projectdesc {
     z-index:1;
     width: 32.11vw; 
-    left: 13.42vw; 
-    top: 37vh; 
-    position: absolute; 
     color: #FEA2C3; 
     font-size: 1.6vw; 
     font-family: Arcon; 
     font-weight: bolder; 
     word-wrap: break-word;
+    float: right;
+    margin-right: 12vw;
+}
+.carousel {
+    z-index: 100;
+    width: 90%;
+    top: 14vh;
+    height: 50vh;
+    margin: 100px auto;
 }
 
 @font-face {
