@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+body{
+    background-color: #03120E;
+    display: flex;
+    font-family: system-ui;
+}
+p {
+    font-size: 12px;
+    text-align: center;
+    color: #8AB0AB;
+}
+.navbar, .container{
+    margin: 5px;
+    background-color: #1A1D1A;
+    border-radius: 3px;
+}
+.size, .size-out {
+    margin: 10px;
+}
+.navbar{
+    padding: .5em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn, input{
+    height: 35px;
+    padding: 0 1em;
+    font-family: inherit;
+}
+.color{
+    padding: 0 .25em;
+    width: 100px;
+    margin: 0 1em;
+}
+.cssoutput {
+    padding: 20px;
+    text-align: left;
+    font-size: 12px;
+    float: right;
+    word-wrap: break-word;
+    width: 60vw;
+
+}
+.container{
+    --size: 4;
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(var(--size), 1fr);
+    grid-template-rows: repeat(var(--size), 1fr);
+    gap: 3px;
+    padding: 3px;
+}
+.pixel{
+    background-color: #26413C;
+    border-radius: 2px;
+}
+
+.boxShadow {
+    background-color: #00ffff;
+    height: 20px;
+    width: 20px;
+    box-shadow:
+    0px 0px 0 0 #00ffff,
+    20px 0px 0 0 #00ffff,
+    40px 0px 0 0 #00ffff,
+    60px 0px 0 0 #00ffff,
+    80px 0px 0 0 #00ffff,
+    100px 0px 0 0 #00ffff,
+    120px 0px 0 0 #00ffff,
+    140px 0px 0 0 #00ffff,
+    160px 0px 0 0 #00ffff,
+    40px 40px 0 0 #00ffff,
+    40px 60px 0 0 #00ffff,
+    120px 60px 0 0 #00ffff,
+    140px 60px 0 0 #00ffff,
+    60px 80px 0 0 #00ffff,
+    80px 80px 0 0 #00ffff,
+    100px 80px 0 0 #00ffff,
+    120px 80px 0 0 #00ffff,
+    60px 120px 0 0 #00ffff,
+    60px 140px 0 0 #00ffff,
+    80px 140px 0 0 #00ffff,
+    100px 140px 0 0 #00ffff,
+    120px 140px 0 0 #00ffff
+    }
