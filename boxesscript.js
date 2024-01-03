@@ -77,7 +77,7 @@ function createBoxShadow(size) {
       boxShadow += `<br>${j*sizeout}px ${i*sizeout}px 0 0 ${colors[i][j]},`
     }
   }
-  if (colors [0][0] == 'drawsomethingplease') return "Output:<br><br>.boxShadow {<br>background-color: #000000" +";<br>height: " +sizeout+ "px;<br>width: " +sizeout+ "px;<br>&emsp;box-shadow: " + boxShadow.slice(0, -1) + "<br>}"
+  if (colors [0][0] == 'drawsomethingplease') return "Output:<br><br>.boxShadow {<br>background-color: #ffffff" +";<br>height: " +sizeout+ "px;<br>width: " +sizeout+ "px;<br>&emsp;box-shadow: " + boxShadow.slice(0, -1) + "<br>}"
   else return "Output:<br><br>.boxShadow {<br>background-color: " + colors[0][0] +";<br>height: " +sizeout+ "px;<br>width: " +sizeout+ "px;<br>box-shadow: " + boxShadow.slice(0, -1) + "<br>}"
 }
 
