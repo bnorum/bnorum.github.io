@@ -13,11 +13,38 @@
 	
         <script src="jquery-3.7.1.min.js"></script>
         <script src="transitions.js"></script>
-        <script type="text/javascript" src="slick/slick.min.js"></script>        
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <style>
+            #loading-screen {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 9999;
+                font-size: 2rem;
+            }
+        </style>
+        <script>
+            window.addEventListener('load', function() {
+                setTimeout(function() {
+                    document.getElementById('loading-screen').style.display = 'none';
+                }, 200);
+            });
+        </script>
     </head>
+    <body>
+        <img id="loading-screen" src="images/bg1.png"></img>
+    </body>
     <div class="overlay" id="overlay"></div>
     <div class="blackbg"></div>
-    
+
+
+
     <!--
     //	projects
     ///////////////////////////////////-->
