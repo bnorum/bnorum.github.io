@@ -45,19 +45,19 @@ To view the website locally:
 2. **Open `index.html` in your browser**:
    You can double-click the `index.html` file or use a live server extension in your code editor for a better development experience.
 
-## 🌐 Live Sie
+## 🌐 Live Site
 
 Visit the live website at: [https://bnorum.github.io](https://bnorum.githubio)
 
-## 📄 Licese
+## 📄 License
 
-This project is licensed under the [MIT License](LICENSE.md). Feel free to use and modify the code as per the license trms.
+This project is licensed under the [MIT License](LICENSE.md). Feel free to use and modify the code as per the license terms.
 
 ## 🙌 Acknowledgments
 
 - **[Slick Carousel](https://github.com/kenwheeler/slick)**: For the responsive and customizable carousel functionlity.
 ---
 
-Feel free to explore, fork, and contribute to this project. If you have any suggestions or improvements, don't hesitate to open an issue or submit a pull reuest.
+Feel free to explore, fork, and contribute to this project. If you have any suggestions or improvements, don't hesitate to open an issue or submit a pull request.
 
 --- 
