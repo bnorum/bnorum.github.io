@@ -28,7 +28,7 @@ Welcome to the source code for [BRADYNORUM.com](https://bnorum.github.io) — a 
 ├── CNAME                   # Custom domain configuration
 ├── LICENSE.md              # MIT License
 └── README.md               # Project documentation
-``
+```
 
 
 ## 🚀 Getting Started
@@ -39,7 +39,7 @@ To view the website locally:
    ```bash
    git clone https://github.com/bnorum/bnorum.github.io.git
    cd bnorum.github.io
-   ``
+   ```
 
 
 2. **Open `index.html` in your browser**:
