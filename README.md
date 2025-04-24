@@ -4,10 +4,10 @@ Welcome to the source code for [BRADYNORUM.com](https://bnorum.github.io) — a 
 
 ## 🧰 Tech Stack
 
-- **HTML & CSS**:Structuring and styling the content for a responsive and clean layout
-- **JavaScript**:Adding interactivity and dynamic features to enhance user experience
-- **Slick Carousel**:Implementing responsive sliders for showcasing projects and media
-- **GitHub Pages**:Hosting the website directly from the repository
+- **HTML & CSS**:Structuring and styling the content for a responsive and clean layout
+- **JavaScript**:Adding interactivity and dynamic features to enhance user experience
+- **Slick Carousel**:Implementing responsive sliders for showcasing projects and media
+- **GitHub Pages**:Hosting the website directly from the repository
 
 ## 📁 Project Structure
 
@@ -47,17 +47,17 @@ To view the website locally:
 
 ## 🌐 Live Site
 
-Visit the live website at: [https://bnorum.github.io](https://bnorum.githubio)
+Visit the live website at: [https://bnorum.github.io](https://bnorum.github.io)
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE.md). Feel free to use and modify the code as per the license terms.
+This project is licensed under the [MIT License](LICENSE.md). Feel free to use and modify the code as per the license terms.
 
 ## 🙌 Acknowledgments
 
-- **[Slick Carousel](https://github.com/kenwheeler/slick)**: For the responsive and customizable carousel functionlity.
+- **[Slick Carousel](https://github.com/kenwheeler/slick)**: For the responsive and customizable carousel functionality.
 ---
 
-Feel free to explore, fork, and contribute to this project. If you have any suggestions or improvements, don't hesitate to open an issue or submit a pull request.
+Feel free to explore, fork, and contribute to this project. If you have any suggestions or improvements, don't hesitate to open an issue or submit a pull request.
 
 --- 
