@@ -108,3 +108,69 @@ a:visited {
 a:active {
   color: #ffcc00;
 }
+
+
+.site-header {
+  background-color: #1a1a1a;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #333;
+}
+
+.back-link {
+  color: #66ccff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.next-entry-arrow {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #1E1E1E;
+  color: #fff;
+  font-size: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  transition: background-color 0.2s ease;
+  z-index: 1000;
+}
+
+.next-entry-arrow:hover {
+  background-color: #4da6ff;
+  text-decoration: none;
+}
+
+.prev-entry-arrow {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  background-color: #1E1E1E;
+  color: #fff;
+  font-size: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  transition: background-color 0.2s ease;
+  z-index: 1000;
+}
+
+.prev-entry-arrow:hover {
+  background-color: #4da6ff;
+  text-decoration: none;
+}
