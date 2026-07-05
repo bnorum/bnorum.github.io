@@ -1,243 +1,152 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>NORUM</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-	
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-	
-        <script src="jquery-3.7.1.min.js"></script>
-        <script src="transitions.js"></script>
-        <script type="text/javascript" src="slick/slick.min.js"></script>
-        <style>
-            #loading-screen {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                color: #fff;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 9999;
-                font-size: 2rem;
-            }
-        </style>
-        <script>
-            window.addEventListener('load', function() {
-                setTimeout(function() {
-                    document.getElementById('loading-screen').style.display = 'none';
-                }, 200);
-            });
-        </script>
-    </head>
-    <body>
-        <img id="loading-screen" src="images/bg1.png"></img>
-    </body>
-    <div class="overlay" id="overlay"></div>
-    <div class="blackbg"></div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brady Norum | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio site featuring projects, blog posts, and contact links."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./node_modules/three/build/three.module.js"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="scene-shell" id="home">
+      <canvas id="scene-canvas"></canvas>
 
+      <header class="overlay-header">
+        <a class="brand" href="#home">Brady Norum</a>
 
+      </header>
 
-    <!--
-    //	projects
-    ///////////////////////////////////-->
-    <div class="page__style projects">
-        <div class="page__description">
-            <div id="projects">
-                <img  style="width: 18vw; left: 2vw; top: 3vh; position: absolute" src="images/watermark.png" />
-                <img class="overlayToggle grain-img" id="toggler" onclick="swapper()"  style="width: 12vw; left: 44vw; bottom: 0.2vh; position: absolute" src="images/stamp.png" />
-                <div style="z-index: 100; width: 62vw; left: 20.8vw; top: 5vh; position: absolute; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                    <button class="btn_nav home_link" style="width: 23vw; font-size: 3vw">HOME</button>
-                    <button class="btn_nav about_link" style="width: 23vw; font-size: 3vw">ABOUT</button>
-                    <button class="btn_nav projects_link" style="width: 23vw; font-size: 3vw">PROJECTS</button>
-                    <button class="btn_nav contact_link" style="width: 23vw; font-size: 3vw">CONTACT</button>
-                    
-                </div> 
-                
-                <div class="single-item carousel">
-                    <div class="projectholder frameguessr">
-                        <div class="projectpair">
-                            <div class="projecttitle">FRAMEGUESSR</div>
-                            <img class="projectimg" src="images/frameguessr.png"/>
-                    </div>
-                    <div class="projectdesc">FrameGuessr
-                            <br>2025
-                            <br><br> A web game where players must select the approximate timestamp in which a frame in a movie takes place. Updates daily.
-                            <br><br><a href="https://frameguessr.info" rel="noopener" target="_blank">Play</a>
-
-                        </div>
-                    </div>
-                    <div class="projectholder nova">
-                        <div class="projectpair">
-                            <div class="projecttitle">NOVA</div>
-                            <img class="projectimg" src="images/nova.png"/>
-                    </div>
-                    <div class="projectdesc">NOVA
-                            <br>2025
-                            <br><br> A security-centered firefox fork, which operates using a collection of add-ons to do things like disable telemetry, customize UI, and more.
-                            <br><br><a href="https://github.com/bnorum/nova-addons" rel="noopener" target="_blank">Github</a>
-                            - Executable Soon (as of 04/24/2025)
-                        </div>
-                    </div>
-                    <div class="projectholder burnout">
-                        <div class="projectpair">
-                            <div class="projecttitle">BURNOUT</div>
-                            <img class="projectimg" src="images/burnout.png"/>
-                    </div>
-                    <div class="projectdesc">BURNOUT (name pending)
-                            <br>2025
-                            <br><br> Burnout is a deck-building game where the player takes control of a car, and collects car parts in order to make their card faster than the speed of light. It is my first major solo game.
-                            <br><br><a href="https://github.com/bnorum/racinggame" rel="noopener" target="_blank">Github</a>
-                            - <a href="https://norumprod.itch.io/racinggametest" rel="noopener" target="_blank">Play (mobile only)</a>
-                        </div>
-                    </div>
-                    <div class="projectholder cuinhell">
-                        <div class="projectpair">
-                            <div class="projecttitle">SEE YOU IN HELL</div>
-                            <img class="projectimg" src="images/cuinhell.png"/>
-                    </div>
-                    <div class="projectdesc">See You In Hell
-                            <br>2025
-                            <br><br> A game made in Unity for the Code For A Cause Game Jam 2025 with Dylan Thyer, Jess Flores and CalamityRhapsody. Take email testimony on lost souls, and guide them to their final resting place.
-                            <br><br><a href="https://github.com/bnorum/Code-For-A-Cause-Game-Jam-2025" rel="noopener" target="_blank">Github</a> -
-                            <a href="https://cien0000.itch.io/c-u-in-hell" rel="noopener" target="_blank">Play</a>
-                        </div>
-                    </div>
-                    <div class="projectholder labrat">
-                        <div class="projectpair">
-                            <div class="projecttitle">LAB RAT</div>
-                            <img class="projectimg" src="images/labrat.png"/>
-                    </div>   
-                        <div class="projectdesc">Lab Rat
-                            <br>2024
-                            <br><br> A game made in Unity over three days for Cupertino Winter Melon Jam 2024. Placed 20th out of 233.
-                            <br><br><a href="https://github.com/bnorum/wintermelonjam" rel="noopener" target="_blank">Github</a> -
-                            <a href="https://norumprod.itch.io/lab-rat" rel="noopener" target="_blank">Play</a>
-                        </div>
-                    </div>
-                    <div class="projectholder norumkaraoke">
-                        <div class="projectpair">
-                            <div class="projecttitle">NORUM KARAOKE</div>
-                            <img class="projectimg" src="images/norum_karaoke.png"/>
-                    </div>
-                        <div class="projectdesc">Norum_Karaoke
-                            <br>2023
-                            <br><br> A karaoke app written in Dart, using Google's Flutter.
-                            It features a companion web app which allows users to upload their songs from their phone to a website, to play in browser.
-                            <br><br><a href="https://github.com/bnorum/norumkaraoke" rel="noopener" target="_blank">Github</a>
-                        </div>
-                    </div>
-                    <!-- MOTHERSHIP Project
-                    <div class="projectholder mothership">
-                        <div class="projectpair">
-                            <div class="projecttitle">MOTHERSHIP</div>
-                            <img class="projectimg" src="images/mothership.png"/>
-                    </div>  
-                    <div class="projectdesc">Mothership
-                            <br>2023
-                            <br><br> A spacey grocery app made in collaboration with a group of five, using Google's Flutter. I acted as the lead front-end developer.
-                            <br><br><a href="https://github.com/csc190mothership/mothership-app" rel="noopener" target="_blank">Github</a>
-                        </div>
-                    </div>
-                    -->
-                    <!-- BOXES Project
-                    <div class="projectholder boxes">
-                        <div class="projectpair">
-                            <div class="projecttitle">BOXES</div>
-                            <img class="projectimg" src="images/boxes.png"/>
-                        </div>
-                        <div class="projectdesc">Boxes
-                            <br>2023
-                            <br><br>Boxes is a web-app that allows users to create pixel art, and generates a CSS class of box-shadows, which visualizes the art through HTML.
-                            <br><br> <a href="https://github.com/bnorum/box-shadow-pixel-art" rel="noopener" target="_blank">Github</a> - <a href="https://bradynorum.com/box-shadow-pixel-art/" rel="noopener" target="_blank">Try it out</a>
-                        </div>
-                    </div>
-                     -->
-                    <div class="projectholder others">
-                        <div class="otherproj">Other Projects:
-                            <br><a href="https://github.com/bnorum/phi005l" rel="noopener" target="_blank">ANTIVIRUS, a game about talking about World of Warcraft</a>
-                            <br><a href="https://github.com/bnorum/dota-2-ML-model" rel="noopener" target="_blank">Scikit-Learn Dota Machine Learning Match Predictor</a>
-                            <br><a href="https://github.com/bnorum/Self-Balancing-Battle" rel="noopener" target="_blank">Self Balancing RPG Battle Utilizing SQL Database</a>
-                            <br><a href="https://github.com/bnorum/vmfplusone" rel="noopener" target="_blank">C++ Assembly Virtual Machine</a>
-                            <br><a href="https://github.com/bnorum/astarjava" rel="noopener" target="_blank">Java Implementation of A* Algorithm</a>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
+      <div class="scene-overlay">
+        <div class="hero-panel">
+          <p class="eyebrow">BRADY NORUM</p>
+          <h1>Portfolio, projects, and writing in one place.</h1>
+          <p class="lead">
+            Explore my work, read recent posts, and find ways to get in touch.
+          </p>
         </div>
-    </div>
-    <!--
-    //	contact
-    ///////////////////////////////////-->
-    <div class="page__style contact">
-        <div class="page__description">
-            <div id="contact">
-                <img  style="width: 18vw; left: 2vw; top: 3vh; position: absolute" src="images/watermark.png" />
-                <img class="overlayToggle grain-img" id="toggler" onclick="swapper()"  style="width: 12vw; left: 44vw; bottom: 0.2vh; position: absolute" src="images/stamp.png" />
-                <div style="z-index: 100; width: 62vw; left: 20.8vw; top: 5vh; position: absolute; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                    <button class="btn_nav home_link" style="width: 23vw; font-size: 3vw">HOME</button>
-                    <button class="btn_nav about_link" style="width: 23vw; font-size: 3vw">ABOUT</button>
-                    <button class="btn_nav projects_link" style="width: 23vw; font-size: 3vw">PROJECTS</button>
-                    <button class="btn_nav contact_link" style="width: 23vw; font-size: 3vw">CONTACT</button>
-                </div>
-                <div style="z-index: 100; width: 50vw; left: 22vw; top: 40vh; position: absolute; justify-content: flex-start; gap: 2vw; align-items: flex-start; display: inline-flex">
-                    <a class="contacticon" href="mailto:bnorum1@pride.hofstra.edu" target="_blank"><img src="images/email.png" style="width:10vw;"/></a>
-                    <a class="contacticon" href="https://www.linkedin.com/in/braden-norum/" rel="noopener" target="_blank"><img src="images/linkedin.png" style="width:10vw;"/></a>
-                    <a class="contacticon" href="https://github.com/bnorum" rel="noopener" target="_blank"><img src="images/github.png" style="width:10vw;"/></a>
-                    <a class="contacticon" href="Resume07162024.pdf" rel="noopener" target="_blank"><img src="images/resume.png" style="width:10vw;"/></a>
-                    <a class="contacticon" href="https://www.figma.com/files/user/1212806177182727243?fuid=1212806177182727243" rel="noopener" target="_blank"><img src="images/figma.png" style="width:7vw;"/></a>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--
-    //	about
-    ///////////////////////////////////-->
-    <div class="page__style about">
-        <div class="page__description">
-            <div id="about">
-                <img  style="width: 18vw; left: 2vw; top: 3vh; position: absolute" src="images/watermark.png" />
-                <img class="overlayToggle grain-img" id="toggler" onclick="swapper()" style="width: 12vw; left: 44vw; bottom: 0.2vh; position: absolute" src="images/stamp.png"/>
-                <div style="z-index: 100; width: 62vw; left: 20.8vw; top: 5vh; position: absolute; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                    <button class="btn_nav home_link" style="width: 23vw; font-size: 3vw">HOME</button>
-                    <button class="btn_nav about_link" style="width: 23vw; font-size: 3vw">ABOUT</button>
-                    <button class="btn_nav projects_link" style="width: 23vw; font-size: 3vw">PROJECTS</button>
-                    <button class="btn_nav contact_link" style="width: 23vw; font-size: 3vw">CONTACT</button>
-              </div>
-              <div class="about-text" style="width: 41.5vw; height: 68.7vh; left: 4vw; top: 22vh; position: absolute; color: #fea2c3; font-size: 1.6vw; font-family: Arcon; font-weight: bolder; word-wrap: break-word">Hi, I’m Brady Norum — a recent Computer Science graduate from Hofstra University with a passion for game development, both in code and in narrative. I specialize in Unity and have built everything from systems-heavy card games to story-driven jams. I’m especially interested in how writing and mechanics work together to shape player experience, whether it’s through quirky UI, branching dialogue, or systems that surprise. I like making games that are smart, strange, and a little bit personal.<br><br>Outside of all that, I'm a huge Steely Dan fan, and a killer accordion player. Thanks for checking me out! Don't get into any trouble, now.</div>
-                <img style="width: 27.6vw; left: 52.1vw; top: 26vh; position: absolute" src="images/myoldface.png" />
 
-            </div>
+        <div class="panel-stack">
+          <a class="floating-card" href="#about">
+            <span class="panel-label">About</span>
+            <strong>About me</strong>
+          </a>
+          <a class="floating-card" href="#portfolio">
+            <span class="panel-label">Projects</span>
+            <strong>Featured projects</strong>
+          </a>
+          <a class="floating-card" href="#blog">
+            <span class="panel-label">Blog</span>
+            <strong>Recent posts</strong>
+          </a>
+          <a class="floating-card" href="#contact">
+            <span class="panel-label">Contact</span>
+            <strong>Get in touch</strong>
+          </a>
         </div>
-    </div>
-        <!--
-    //	home
-    ///////////////////////////////////-->
-    <div class="page__style home">
-        <div class="page__description">
-            <div id="home">
-                <img class="grain-img" style="width: 35vw; left: 6.5vw; top: 25vh; position: absolute" src="images/NAMELOGO.png" />
-                <img class="grain-img" style="width: 18vw; left: 2vw; top: 3vh;  position: absolute" src="images/watermark.png" />
-                <img class="overlayToggle grain-img" id="toggler" onclick="swapper()" style="width: 12vw; left: 44vw; bottom: 0.2vh; position: absolute" src="images/stamp.png"/>
-                
-                <div style="z-index: 100; left: 50vw; top: 31vh; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                    <button class="btn_nav about_link"style="width: 23vw;">ABOUT</button>
-                    <button class="btn_nav projects_link" style="width: 23vw;">PROJECTS</button>
-                    <button class="btn_nav contact_link" style="width: 23vw;">CONTACT</button>
-                    <a class="btn_nav" style="width:23vw; text-align:center; text-decoration: none; font-size:3vw;" href="at.html">BLOG (new!)</button>
-               </div>
-            </div>
-        </div>
-    </div>
-    
+      </div>
 
+      <div class="scene-hint">A drifting forest backdrop with paper panels floating on top.</div>
+      <a class="scene-home" href="#home">Back to top</a>
+    </div>
+
+    <section id="about" class="content-section" data-side="left">
+      <div class="content-panel">
+        <button class="panel-back" data-target="home" type="button">Back</button>
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>About me</h2>
+        </div>
+        <div class="content-grid">
+          <article class="content-card">
+            <h3>Background</h3>
+            <p>I am a computer science teacher in Massachusetts. I have worked in education since 2022, and am a passionate educator.</p>
+          </article>
+          <article class="content-card">
+            <h3>Interests</h3>
+            <p>I enjoy video game development, creative coding, writing and backpacking.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="content-section" data-side="right">
+      <div class="content-panel">
+        <button class="panel-back" data-target="home" type="button">Back</button>
+        <div class="section-heading">
+          <p class="eyebrow">Portfolio</p>
+          <h2>Selected projects</h2>
+        </div>
+        <div class="content-grid">
+          <article class="content-card">
+            <h3>NOVA</h3>
+            <p>A fork of firefox with improved security features. Currently available as a suite of add-ons until the next firefox LTS release. Any second now!</p>
+            <a href="https://github.com/bnorum/nova-addons" target="_blank">Open project ↗</a>
+          </article>
+          <article class="content-card">
+            <h3>Dota 2 ML Model</h3>
+            <p>A machine learning model developed to accurately predict the outcome of matches of DotA 2.</p>
+            <a href="https://github.com/bnorum/dota-2-ML-model" target="_blank">Open project ↗</a>
+          </article>
+          <article class="content-card">
+            <h3>Lab Rat</h3>
+            <p>A game jam game made in 3 days! This is one of my smaller projects and a personal favorite.</p>
+            <a href="https://norumprod.itch.io/lab-rat" target="_blank">Open project ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="content-section" data-side="left">
+      <div class="content-panel">
+        <button class="panel-back" data-target="home" type="button">Back</button>
+        <div class="section-heading">
+          <p class="eyebrow">Blog</p>
+          <h2>Recent writing</h2>
+          <p class="lead">Note: these will bring you to a seperate page on this site.</p>
+        </div>
+        <div class="content-grid blog-grid">
+          <article class="content-card">
+            <span class="post-meta">05 Jul 2026</span>
+            <h3>Hiking Massachusetts</h3>
+            <p>A recounting of my time on the Appalachian Trail</p>
+            <a href="at.html">Read More ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="content-section" data-side="right">
+      <div class="content-panel">
+        <button class="panel-back" data-target="home" type="button">Back</button>
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Contact</h2>
+          <p>Reach out for collaborations, project questions, or general inquiries.</p>
+        </div>
+        <div class="contact-links">
+          <a class="contact-pill" href="mailto:bradennorum@gmail.com">Email</a>
+          <a class="contact-pill" href="https://github.com/bnorum" target="_blank">GitHub</a>
+          <a class="contact-pill" href="https://www.linkedin.com/in/braden-norum/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="script.js"></script>
+  </body>
 </html>
