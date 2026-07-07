@@ -101,7 +101,7 @@ a {
   display: inline-flex;
   flex-direction: column;
   gap: 0.12rem;
-  color: var(--ink);
+  color: #f2c11b;
 }
 
 .brand-mark {
