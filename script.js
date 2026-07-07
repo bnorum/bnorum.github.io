@@ -16,24 +16,24 @@ if (canvas) {
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
   renderer.setSize(window.innerWidth, window.innerHeight);
-  renderer.setClearColor(0x000000, 1);
+  renderer.setClearColor(0xcde8ff, 1);
   renderer.domElement.style.cursor = 'default';
 
   const scene = new THREE.Scene();
-  scene.fog = new THREE.FogExp2(0x000000, 0.006);
+  scene.fog = new THREE.FogExp2(0xbfd8e7, 0.0024);
 
   const camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.1, 220);
   camera.position.set(0, 4.4, 8.6);
 
-  const hemi = new THREE.HemisphereLight(0xf6f1de, 0x314d34, 1.05);
+  const hemi = new THREE.HemisphereLight(0xf4f8ff, 0x6f8e62, 1.28);
   scene.add(hemi);
 
-  const dirLight = new THREE.DirectionalLight(0xffffff, 1.1);
-  dirLight.position.set(8, 12, 5);
+  const dirLight = new THREE.DirectionalLight(0xfff4de, 1.5);
+  dirLight.position.set(10, 16, 7);
   scene.add(dirLight);
 
-  const fillLight = new THREE.PointLight(0x9dc095, 7, 24, 2);
-  fillLight.position.set(-6, 5, -7);
+  const fillLight = new THREE.PointLight(0xb8dbff, 3.2, 36, 2);
+  fillLight.position.set(-8, 7, -5);
   scene.add(fillLight);
 
   const groundGroup = new THREE.Group();
@@ -72,7 +72,7 @@ if (canvas) {
 
   const sky = new THREE.Mesh(
     new THREE.SphereGeometry(220, 48, 36),
-    new THREE.MeshBasicMaterial({ color: 0x000000, side: THREE.BackSide })
+    new THREE.MeshBasicMaterial({ color: 0xb9ddff, side: THREE.BackSide })
   );
   scene.add(sky);
 
@@ -97,11 +97,12 @@ if (canvas) {
   const starMaterial = new THREE.PointsMaterial({
     size: 0.16,
     transparent: true,
-    opacity: 0.95,
+    opacity: 0,
     vertexColors: true,
     depthWrite: false
   });
   const stars = new THREE.Points(starGeometry, starMaterial);
+  stars.visible = false;
   scene.add(stars);
 
   const treeGroup = new THREE.Group();
