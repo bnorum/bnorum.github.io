@@ -147,9 +147,11 @@ a {
   position: absolute;
   inset: 0;
   z-index: 5;
-  display: grid;
-  align-content: center;
-  gap: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.9rem;
   padding: 7.2rem 3.7rem 6.8rem;
   pointer-events: none;
   opacity: 1;
@@ -193,9 +195,9 @@ a {
 
 .panel-stack {
   display: grid;
-  grid-template-columns: repeat(4, minmax(180px, 1fr));
-  gap: 0.75rem;
-  max-width: 860px;
+  grid-template-columns: repeat(2, minmax(170px, 1fr));
+  gap: 0.65rem;
+  width: min(100%, 660px);
 }
 
 .floating-card {
@@ -473,13 +475,18 @@ h1 {
 
   .panel-stack {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: min(100%, 520px);
   }
 }
 
 @media (max-width: 640px) {
+  .brand {
+    display: none;
+  }
+
   .scene-overlay {
-    align-content: end;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: stretch;
     padding: 1.15rem 1.15rem max(1.2rem, calc(env(safe-area-inset-bottom) + 1.2rem));
     gap: 0.65rem;
     overflow-y: auto;
@@ -498,7 +505,7 @@ h1 {
   .hero-panel {
     width: calc(100% - 0.2rem);
     max-width: 100%;
-    margin-top: auto;
+    margin-top: 0;
     padding: 0.9rem 0.9rem;
   }
 
@@ -516,6 +523,7 @@ h1 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     width: calc(100% - 0.2rem);
     gap: 0.55rem;
+    margin-top: 0;
   }
 
   .floating-card {
