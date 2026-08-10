@@ -7,6 +7,9 @@
   --accent: #0b4f6c;
   --accent-soft: #b06a3f;
   --frame: #f2c11b;
+  --scroll-track: rgba(186, 161, 118, 0.28);
+  --scroll-thumb: rgba(82, 62, 40, 0.76);
+  --scroll-thumb-hover: rgba(60, 45, 29, 0.9);
   --line: rgba(37, 31, 24, 0.25);
   --shadow: rgba(18, 12, 7, 0.18);
   font-family: "Newsreader", "Libre Baskerville", serif;
@@ -335,6 +338,37 @@ h1 {
   opacity: 0;
   transition: transform 0.45s ease, opacity 0.45s ease;
   overflow: auto;
+}
+
+/* Magazine-style scrollbar for panel/overlay scroll regions. */
+.content-panel,
+.scene-overlay {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-thumb) var(--scroll-track);
+}
+
+.content-panel::-webkit-scrollbar,
+.scene-overlay::-webkit-scrollbar {
+  width: 11px;
+  height: 11px;
+}
+
+.content-panel::-webkit-scrollbar-track,
+.scene-overlay::-webkit-scrollbar-track {
+  background: var(--scroll-track);
+  border-radius: 999px;
+}
+
+.content-panel::-webkit-scrollbar-thumb,
+.scene-overlay::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, rgba(108, 82, 53, 0.92), rgba(74, 56, 36, 0.92));
+  border-radius: 999px;
+  border: 2px solid rgba(236, 226, 205, 0.86);
+}
+
+.content-panel::-webkit-scrollbar-thumb:hover,
+.scene-overlay::-webkit-scrollbar-thumb:hover {
+  background: var(--scroll-thumb-hover);
 }
 
 .panel-back {
